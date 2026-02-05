@@ -12,7 +12,7 @@ export const config = {
     },
     about: {
         title: "About Me",
-        description: "I'm a <highlight>Freelance Full-Stack Developer</highlight> building web and mobile applications from <gradient>idea to launch</gradient>. I work with founders, startups, and small teams to turn business requirements into <gradient>real products</gradient>—clear user flows, clean modern UI, <glow>reliable backend services</glow>, and scalable architecture. I prioritize <glow>performance</glow>, clean code, and long-term maintainability, delivering through transparent milestones and regular updates to ship fast without compromising quality."
+        description: "I'm a <highlight-wrap>Freelance | Full-Stack Developer</highlight-wrap> building web and mobile applications from <gradient>idea to launch</gradient>. I work with founders, startups, and small teams to turn business requirements into <gradient>real products</gradient>—clear user flows, clean modern UI, <glow>reliable backend services</glow>, and scalable architecture. I prioritize <glow>performance</glow>, clean code, and long-term maintainability, delivering through transparent milestones and regular updates to ship fast without compromising quality."
     },
     experiences: [
         {

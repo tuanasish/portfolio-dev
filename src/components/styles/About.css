@@ -39,33 +39,21 @@
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: 0 100%;
+  padding: 0 4px;
   padding-bottom: 4px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  color: #fff !important;
+  color: #fff;
   font-weight: 700;
-  position: relative;
+  /* Slant the right end "up" but lower the clip point to avoid text */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
   transition: all 0.3s ease;
-}
-
-/* Tilted marker flick at the very end of the phrase */
-.about-me .highlight::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  bottom: 0;
-  width: 10px;
-  height: 6px;
-  background: #ff6bef;
-  transform: skewY(-20deg);
-  transform-origin: left bottom;
-  pointer-events: none;
-  border-radius: 0 2px 2px 0;
 }
 
 .about-me .highlight:hover {
   background: linear-gradient(90deg, #ff6bef, #c481ff);
-  background-size: 100% 7px;
+  background-size: 100% 6px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
 }
 
 .gradient-text {
@@ -179,6 +167,26 @@
     font-size: 1.9vw;
     line-height: 2.3vw;
   }
+
+  .about-me .desktop-highlight {
+    display: inline !important;
+  }
+
+  .about-me .mobile-wrap {
+    display: none !important;
+  }
+
+  .mobile-br {
+    display: none;
+  }
+}
+
+.about-me .desktop-highlight {
+  display: none !important;
+}
+
+.about-me .mobile-wrap {
+  display: inline !important;
 }
 
 @media only screen and (min-width: 1950px) {

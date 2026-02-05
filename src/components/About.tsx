@@ -8,11 +8,25 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Helper function to parse highlight, emphasis, gradient, and glow tags
 const parseHighlights = (text: string) => {
-  const parts = text.split(/(<(?:highlight|emphasis|gradient|glow)>.*?<\/(?:highlight|emphasis|gradient|glow)>)/g);
+  const parts = text.split(/(<(?:highlight|highlight-wrap|emphasis|gradient|glow)>.*?<\/(?:highlight|highlight-wrap|emphasis|gradient|glow)>|<br\s*\/?>)/g);
   return parts.map((part, index) => {
+    if (!part) return null;
     if (part.startsWith('<highlight>')) {
       const content = part.replace(/<\/?highlight>/g, '');
       return <span key={index} className="highlight">{content}</span>;
+    }
+    if (part.startsWith('<highlight-wrap>')) {
+      const content = part.replace(/<\/?highlight-wrap>/g, '');
+      const [first, second] = content.split('|');
+      return (
+        <span key={index} className="highlight-wrap-container">
+          <span className="desktop-highlight highlight">{first} {second}</span>
+          <span className="mobile-wrap">
+            {first} <br />
+            <span className="highlight">{second}</span>
+          </span>
+        </span>
+      );
     }
     if (part.startsWith('<emphasis>')) {
       const content = part.replace(/<\/?emphasis>/g, '');
@@ -25,6 +39,9 @@ const parseHighlights = (text: string) => {
     if (part.startsWith('<glow>')) {
       const content = part.replace(/<\/?glow>/g, '');
       return <span key={index} className="glow-text">{content}</span>;
+    }
+    if (part.match(/<br\s*\/?>/)) {
+      return <br key={index} className="mobile-br" />;
     }
     return part;
   });
