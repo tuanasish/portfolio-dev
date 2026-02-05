@@ -89,29 +89,39 @@
     font-size: 18px !important;
   }
 
-  /* Force static positioning to prevent overlaps */
+  /* Force centering and masking for animations */
   .landing-info h2,
-  h2.landing-info-h2,
-  .landing-h2-1,
-  .landing-h2-info,
-  .landing-h2-info-1,
-  .landing-h2-2 {
+  h2.landing-info-h2 {
     position: relative !important;
-    display: block;
+    display: block !important;
     width: 100%;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    height: 35px !important;
+    /* Fixed height for the mask */
+    text-align: center;
+  }
+
+  /* Subtitle Items - MUST be absolute to overlap and slide */
+  .landing-h2-1,
+  .landing-h2-2,
+  .landing-h2-info,
+  .landing-h2-info-1 {
+    position: absolute !important;
+    width: 100%;
+    left: 0;
+    top: 0;
     margin: 0 !important;
-    font-size: 22px !important;
-    line-height: 1.2 !important;
     white-space: nowrap;
     text-align: center;
-    height: 30px !important;
-    transform: none !important;
+    line-height: 1.2 !important;
+    /* Do NOT set transform: none */
   }
 
   /* Specific styling for the distinct parts */
   .landing-h2-1,
   .landing-h2-2 {
-    font-size: 28px !important;
+    font-size: 26px !important;
     color: var(--accentColor);
     font-weight: 700;
   }
