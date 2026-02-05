@@ -429,6 +429,8 @@ h2.landing-info-h2 {
   font-weight: 600;
   position: relative;
   margin-left: -5px;
+  text-shadow: 0 0 20px rgba(196, 129, 255, 0.3);
+  /* Subtle glow for contrast */
 }
 
 .landing-h2-2 {
@@ -438,16 +440,8 @@ h2.landing-info-h2 {
 }
 
 .landing-info-h2::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 120%;
-  z-index: 3;
-  background-image: linear-gradient(0deg,
-      var(--backgroundColor) 40%,
-      rgba(0, 0, 0, 0) 110%);
-  top: 0;
-  left: 0;
+  display: none;
+  /* Removed the masking gradient that was obscuring text */
 }
 
 @media screen and (min-width: 500px) {
@@ -526,18 +520,21 @@ h2.landing-info-h2 {
   .landing-intro {
     top: 40%;
     left: auto;
-    right: 66%;
+    right: 72%;
+    /* Pushed further left to avoid model */
     transform: translate(0%, -50%);
   }
 
   .landing-info {
     bottom: auto;
     top: 51%;
-    z-index: inherit;
+    z-index: 20;
+    /* Ensure it stays above character-model::after if needed */
     text-align: left;
     transform: translate(0%, -50%);
     right: auto;
-    left: 66%;
+    left: 72%;
+    /* Pushed further right to avoid model */
   }
 }
 
@@ -545,18 +542,20 @@ h2.landing-info-h2 {
   .landing-intro {
     top: 40%;
     left: auto;
-    right: 70%;
+    right: 75%;
+    /* More breathing room for wide screens */
     transform: translate(0%, -50%);
   }
 
   .landing-info {
     bottom: auto;
     top: 51%;
-    z-index: inherit;
+    z-index: 20;
     text-align: left;
     transform: translate(0%, -50%);
     right: auto;
-    left: 70%;
+    left: 75%;
+    /* More breathing room for wide screens */
   }
 }
 
