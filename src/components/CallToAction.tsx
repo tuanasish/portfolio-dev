@@ -9,11 +9,11 @@ const CallToAction = () => {
         <Link to="/play" className="cta-btn cta-btn-play" data-cursor="disable">
           Play With Me →
         </Link>
-        
-        <a 
-          href={config.contact.linkedin} 
-          target="_blank" 
-          rel="noopener noreferrer" 
+
+        <a
+          href={config.contact.facebook}
+          target="_blank"
+          rel="noopener noreferrer"
           className="cta-btn cta-btn-hire"
           data-cursor="disable"
         >

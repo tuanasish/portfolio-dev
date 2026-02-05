@@ -29,32 +29,35 @@
     right: auto !important;
     bottom: auto !important;
     transform: none !important;
-    padding-top: 40px;
-    /* Shift higher up */
-    margin-bottom: 20px;
+    padding-top: 60px;
+    margin-bottom: 30px;
     z-index: 10;
     text-align: center;
     width: 100% !important;
     order: 1;
-    /* First: Name */
     height: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-intro h2 {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
   }
 
   .landing-intro h1 {
     word-spacing: 0.1em;
-    font-size: 32px !important;
-    /* Ensure nice size */
-    line-height: 1.2 !important;
+    font-size: 36px !important;
+    line-height: 1.1 !important;
     margin: 0;
+    text-align: center;
   }
 
   /* Ensure name parts display correctly */
   .landing-intro h1 br {
-    display: block;
-    /* Keep break on mobile for 2 lines, or use display:none for 1 line */
-    content: " ";
-    /* Fallback */
-    margin-bottom: 5px;
+    display: none;
+    /* Hide break on mobile to keep name together if possible */
   }
 
   /* Subtitles Container */
@@ -66,56 +69,56 @@
     bottom: auto !important;
     transform: none !important;
     text-align: center;
-    margin-top: 20px;
-    /* Space between name and subtitles */
+    margin-top: 30px;
     z-index: 10;
     background: transparent;
-    padding-bottom: 50px;
-    /* Add bottom padding for scroll space */
+    padding-bottom: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     height: auto !important;
-    /* Force auto height */
     width: 100% !important;
     order: 3;
-    /* Third: Subtitles */
   }
 
   .landing-info h3 {
     text-align: center;
-    display: none;
-    /* Hide 'An' if not needed, or keep it static */
+    display: block;
+    margin-bottom: -15px !important;
+    font-size: 18px !important;
   }
 
   /* Force static positioning to prevent overlaps */
   .landing-info h2,
   h2.landing-info-h2,
   .landing-h2-1,
-  .landing-h2-info {
-    position: static !important;
+  .landing-h2-info,
+  .landing-h2-info-1,
+  .landing-h2-2 {
+    position: relative !important;
     display: block;
-    width: auto;
+    width: 100%;
     margin: 0 !important;
-    font-size: 20px !important;
-    line-height: 1.5 !important;
-    white-space: normal;
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap;
     text-align: center;
-    height: auto !important;
+    height: 30px !important;
     transform: none !important;
-    /* Remove any transforms */
   }
 
   /* Specific styling for the distinct parts */
-  .landing-h2-1 {
-    font-size: 24px !important;
+  .landing-h2-1,
+  .landing-h2-2 {
+    font-size: 28px !important;
     color: var(--accentColor);
     font-weight: 700;
   }
 
-  .landing-h2-info {
-    font-size: 18px !important;
+  .landing-h2-info,
+  .landing-h2-info-1 {
+    font-size: 20px !important;
     color: rgba(255, 255, 255, 0.9);
   }
 
@@ -127,17 +130,15 @@
   .mobile-photo {
     display: block;
     position: relative !important;
-    width: 100%;
+    width: 85%;
     max-width: 380px;
     margin: 0 auto;
     z-index: 1;
     order: 2;
-    /* Second: Photo */
-    /* Add fade mask to bottom */
-    -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     pointer-events: none;
-    transform: none !important;
+    transform: translateY(-10px) !important;
   }
 
   .mobile-photo img {
@@ -261,7 +262,6 @@
   position: absolute;
   max-width: 1920px;
   max-height: 1080px;
-  transform: translateX(-50%);
   width: 100%;
   left: 50%;
   z-index: 0;

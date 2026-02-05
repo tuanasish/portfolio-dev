@@ -161,17 +161,17 @@
   .techstack-content {
     max-width: 900px;
   }
-  
+
   .techstack-item {
     width: 50px;
     height: 62px;
   }
-  
+
   .techstack-item img {
     width: 26px;
     height: 26px;
   }
-  
+
   .techstack-item span {
     font-size: 8px;
   }
@@ -182,26 +182,26 @@
     font-size: 50px;
     margin-bottom: 35px;
   }
-  
+
   .techstack-pyramid {
     gap: 8px;
   }
-  
+
   .techstack-row {
     gap: 8px;
   }
-  
+
   .techstack-item {
     width: 45px;
     height: 56px;
     padding: 6px;
   }
-  
+
   .techstack-item img {
     width: 22px;
     height: 22px;
   }
-  
+
   .techstack-item span {
     font-size: 7px;
     max-width: 42px;
@@ -212,27 +212,27 @@
   .techstack-content h2 {
     font-size: 36px;
   }
-  
+
   .techstack-pyramid {
     gap: 6px;
   }
-  
+
   .techstack-row {
     gap: 6px;
   }
-  
+
   .techstack-item {
     width: 40px;
     height: 50px;
     padding: 5px;
     border-radius: 8px;
   }
-  
+
   .techstack-item img {
     width: 20px;
     height: 20px;
   }
-  
+
   .techstack-item span {
     font-size: 6px;
     max-width: 38px;

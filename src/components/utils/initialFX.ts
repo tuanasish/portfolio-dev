@@ -8,6 +8,7 @@ export function initialFX() {
     lenis.start();
   }
   document.getElementsByTagName("main")[0].classList.add("main-active");
+
   gsap.to("body", {
     backgroundColor: "#0b080c",
     duration: 0.5,

@@ -10,6 +10,39 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
+  // Typing effect for the logo
+  const [typedText, setTypedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const fullText = "tuanasish.dev";
+
+  useEffect(() => {
+    const typingSpeed = isDeleting ? 80 : 150;
+
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        // Typing phase
+        const nextText = fullText.slice(0, typedText.length + 1);
+        setTypedText(nextText);
+
+        if (nextText === fullText) {
+          // Finished typing, wait 2s before starting to delete
+          setTimeout(() => setIsDeleting(true), 2000);
+        }
+      } else {
+        // Deleting phase
+        const nextText = fullText.slice(0, typedText.length - 1);
+        setTypedText(nextText);
+
+        if (nextText === "") {
+          // Finished deleting, start typing again
+          setIsDeleting(false);
+        }
+      }
+    }, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [typedText, isDeleting]);
+
   if (percent >= 100) {
     setTimeout(() => {
       setLoaded(true);
@@ -46,7 +79,8 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          {typedText}
+          <span className="cursor-loading"></span>
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">

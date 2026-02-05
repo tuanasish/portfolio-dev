@@ -85,8 +85,8 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href={config.contact.linkedin}
-              target="_blank"
+              href={config.contact.linkedin || "/#"}
+              target={config.contact.linkedin ? "_blank" : "_self"}
               rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"

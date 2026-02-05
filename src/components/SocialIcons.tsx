@@ -66,7 +66,7 @@ const SocialIcons = () => {
           </a>
         </span>
         <span>
-          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
+          <a href={config.contact.linkedin || "/#"} target={config.contact.linkedin ? "_blank" : "_self"} rel="noopener noreferrer">
             <FaLinkedinIn />
           </a>
         </span>

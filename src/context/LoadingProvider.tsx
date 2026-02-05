@@ -41,7 +41,7 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     }
   }, []);
 
-  useEffect(() => {}, [loading]);
+  useEffect(() => { }, [loading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>
