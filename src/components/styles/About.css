@@ -39,21 +39,33 @@
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: 0 100%;
-  padding: 0 4px;
   padding-bottom: 4px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  color: #fff;
+  color: #fff !important;
   font-weight: 700;
-  /* Slant the right end "up" but lower the clip point to avoid text */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+  position: relative;
   transition: all 0.3s ease;
+}
+
+/* Tilted marker flick at the very end of the phrase */
+.about-me .highlight::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 0;
+  width: 10px;
+  height: 6px;
+  background: #ff6bef;
+  transform: skewY(-20deg);
+  transform-origin: left bottom;
+  pointer-events: none;
+  border-radius: 0 2px 2px 0;
 }
 
 .about-me .highlight:hover {
   background: linear-gradient(90deg, #ff6bef, #c481ff);
-  background-size: 100% 6px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
+  background-size: 100% 7px;
 }
 
 .gradient-text {
