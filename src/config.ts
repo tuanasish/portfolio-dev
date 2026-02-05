@@ -103,11 +103,11 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/drishti.png",
-            description: " VietNam's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali."
+            title: "Food Delivery System",
+            category: "Mobile / Backend",
+            technologies: "Flutter, Dart, Supabase",
+            image: "/images/project1.jpg",
+            description: "Một hệ thống giao vận đồ ăn thông minh được xây dựng với Flutter và Dart, sử dụng Supabase làm backend để quản lý dữ liệu thời gian thực và xác thực người dùng."
         },
         {
             id: 2,
