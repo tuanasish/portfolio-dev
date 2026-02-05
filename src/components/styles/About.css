@@ -170,6 +170,7 @@
 
   .about-me .desktop-highlight {
     display: inline !important;
+    color: #fff !important;
   }
 
   .about-me .mobile-wrap {
@@ -187,6 +188,11 @@
 
 .about-me .mobile-wrap {
   display: inline !important;
+  color: inherit;
+}
+
+.about-me .mobile-wrap .highlight {
+  color: #fff !important;
 }
 
 @media only screen and (min-width: 1950px) {

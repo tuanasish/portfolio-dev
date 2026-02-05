@@ -23,7 +23,7 @@ const parseHighlights = (text: string) => {
           <span className="desktop-highlight highlight">{first} {second}</span>
           <span className="mobile-wrap">
             {first} <br />
-            <span className="highlight">{second}</span>
+            <span className="highlight">{second.trim()}</span>
           </span>
         </span>
       );
