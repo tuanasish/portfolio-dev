@@ -17,13 +17,14 @@ const parseHighlights = (text: string) => {
     }
     if (part.startsWith('<highlight-wrap>')) {
       const content = part.replace(/<\/?highlight-wrap>/g, '');
-      const [first, second] = content.split('|');
+      const wrapParts = content.split('|').map(s => s.trim());
+      const first = wrapParts[0] || '';
+      const second = wrapParts[1] || '';
       return (
         <span key={index} className="highlight-wrap-container">
           <span className="desktop-highlight highlight">{first} {second}</span>
           <span className="mobile-wrap">
-            {first} <br />
-            <span className="highlight">{second.trim()}</span>
+            {first}<br /><span className="highlight">{second}</span>
           </span>
         </span>
       );

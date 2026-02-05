@@ -45,15 +45,15 @@
   box-decoration-break: clone;
   color: #fff;
   font-weight: 700;
-  /* Slant the right end "up" but lower the clip point to avoid text */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
+  /* Slant the right end "up" even more to make it sharper/pointier */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
   transition: all 0.3s ease;
 }
 
 .about-me .highlight:hover {
   background: linear-gradient(90deg, #ff6bef, #c481ff);
   background-size: 100% 6px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
 }
 
 .gradient-text {
@@ -193,6 +193,7 @@
 
 .about-me .mobile-wrap .highlight {
   color: #fff !important;
+  padding-left: 0 !important;
 }
 
 @media only screen and (min-width: 1950px) {
