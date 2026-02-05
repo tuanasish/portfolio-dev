@@ -82,9 +82,10 @@
     align-items: center;
     justify-content: center;
     height: auto !important;
-    order: 2;
-    /* Titles under Name */
+    order: 3;
+    /* Titles at bottom */
     padding: 0 !important;
+    padding-bottom: 40px !important;
   }
 
   .landing-info h3 {
@@ -154,8 +155,8 @@
     max-width: 400px;
     margin: 0 auto;
     z-index: 1;
-    order: 3;
-    /* Photo below all text */
+    order: 2;
+    /* Photo below Name */
     margin-top: 10px;
     -webkit-mask-image: linear-gradient(to bottom,
         transparent 0%,
