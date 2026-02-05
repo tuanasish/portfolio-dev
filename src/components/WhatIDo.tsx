@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import "./styles/WhatIDo.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { config } from "../config";
 
 const WhatIDo = () => {
@@ -8,15 +7,22 @@ const WhatIDo = () => {
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
   };
-  useEffect(() => {
-    if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
-        }
-      });
+
+  const handleArrowClick = (e: React.MouseEvent, index: number) => {
+    e.stopPropagation();
+    const container = containerRef.current[index];
+    if (container) {
+      handleClick(container);
     }
+  };
+
+  useEffect(() => {
+    // Enable click on containers for all devices
+    containerRef.current.forEach((container) => {
+      if (container) {
+        container.addEventListener("click", () => handleClick(container));
+      }
+    });
     return () => {
       containerRef.current.forEach((container) => {
         if (container) {
@@ -25,13 +31,14 @@ const WhatIDo = () => {
       });
     };
   }, []);
+
   return (
     <div className="whatIDO">
       <div className="what-box">
-        <h2 className="title">
-          W<span className="hat-h2">HAT</span>
+        <h2 className="what-title">
+          W<span className="hat-h2">HAT</span>{" "}
           <div>
-            &nbsp;I<span className="do-h2"> DO</span>
+            I<span className="do-h2"> DO</span>
           </div>
         </h2>
       </div>
@@ -60,7 +67,7 @@ const WhatIDo = () => {
             </svg>
           </div>
           <div
-            className="what-content what-noTouch"
+            className="what-content"
             ref={(el) => setRef(el, 0)}
           >
             <div className="what-border1">
@@ -99,11 +106,15 @@ const WhatIDo = () => {
                   <div key={index} className="what-tags">{tool}</div>
                 ))}
               </div>
-              <div className="what-arrow"></div>
+              <div
+                className="what-arrow"
+                onClick={(e) => handleArrowClick(e, 0)}
+                title="Click to expand"
+              ></div>
             </div>
           </div>
           <div
-            className="what-content what-noTouch"
+            className="what-content"
             ref={(el) => setRef(el, 1)}
           >
             <div className="what-border1">
@@ -132,7 +143,11 @@ const WhatIDo = () => {
                   <div key={index} className="what-tags">{tool}</div>
                 ))}
               </div>
-              <div className="what-arrow"></div>
+              <div
+                className="what-arrow"
+                onClick={(e) => handleArrowClick(e, 1)}
+                title="Click to expand"
+              ></div>
             </div>
           </div>
         </div>

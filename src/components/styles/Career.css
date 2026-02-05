@@ -10,6 +10,8 @@
   margin: auto;
   margin-bottom: 250px;
   padding: 120px 0px;
+  background-color: var(--bg);
+  z-index: 10;
 }
 
 .career-section h2 {

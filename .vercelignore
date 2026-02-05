@@ -1,0 +1,7 @@
+# Ignore portfolio-hybrid folder during Vercel deployment
+portfolio-hybrid/
+
+# Other common ignores
+node_modules/
+.git/
+*.log

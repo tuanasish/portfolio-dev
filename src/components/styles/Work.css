@@ -148,6 +148,25 @@
 .work-image img {
   max-width: 100%;
   max-height: 350px;
+  border: 4px solid var(--accentColor);
+  /* Default system bright pink/purple */
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(194, 164, 255, 0.4),
+    /* Default pink glow */
+    inset 0 0 15px rgba(194, 164, 255, 0.1);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  object-fit: cover;
+  background: rgba(194, 164, 255, 0.05);
+  /* Tinted background */
+}
+
+.work-image-in:hover img {
+  border-color: #fff;
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6),
+    0 0 40px rgba(194, 164, 255, 0.6);
+  /* Intense pink glow on hover */
 }
 
 @media only screen and (max-height: 900px) {

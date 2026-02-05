@@ -2,14 +2,14 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
 import { config } from "../config";
 import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
-  useEffect(() => {
+  useGSAP(() => {
     // Disable pinning on mobile to allow scrolling
     if (window.innerWidth <= 768) return;
 

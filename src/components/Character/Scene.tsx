@@ -38,7 +38,12 @@ const Scene = () => {
       renderer.toneMappingExposure = 1;
       canvasDiv.current.appendChild(renderer.domElement);
 
-      const camera = new THREE.PerspectiveCamera(14.5, aspect, 0.1, 1000);
+      const camera = new THREE.PerspectiveCamera(
+        aspect < 1 ? 25 : 14.5,
+        aspect,
+        0.1,
+        1000
+      );
       camera.position.z = 10;
       camera.position.set(0, 13.1, 24.7);
       camera.zoom = 1.1;
@@ -65,6 +70,7 @@ const Scene = () => {
           headBone = character.getObjectByName("spine006") || null;
           screenLight = character.getObjectByName("screenlight") || null;
           progress.loaded().then(() => {
+            document.body.classList.add("character-loaded");
             setTimeout(() => {
               light.turnOnLights();
               animations.startIntro();

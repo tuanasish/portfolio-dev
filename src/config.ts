@@ -8,11 +8,11 @@ export const config = {
     social: {
         github: "tuanasishh",
         email: "vuanhtuanofc@gmail.com",
-        location: "Vietnam"
+        location: "Ha Noi, Vietnam"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Ha Noi, Vietnam. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I'm a <highlight>Freelance Full-Stack Developer</highlight> building web and mobile applications from <gradient>idea to launch</gradient>. I work with founders, startups, and small teams to turn business requirements into <gradient>real products</gradient>—clear user flows, clean modern UI, <glow>reliable backend services</glow>, and scalable architecture. I prioritize <glow>performance</glow>, clean code, and long-term maintainability, delivering through transparent milestones and regular updates to ship fast without compromising quality."
     },
     experiences: [
         {
@@ -104,70 +104,55 @@ export const config = {
         {
             id: 1,
             title: "Food Delivery System",
-            category: "Mobile / Backend",
+            category: "Mobile / Full Stack",
             technologies: "Flutter, Dart, Supabase",
             image: "/images/project1.jpg",
-            description: "Một hệ thống giao vận đồ ăn thông minh được xây dựng với Flutter và Dart, sử dụng Supabase làm backend để quản lý dữ liệu thời gian thực và xác thực người dùng."
+            description: "Local Food is a modern food-ordering mobile app that helps users discover dishes, compare restaurants, and place orders in just a few steps. It features a clean, card-based UI with a consistent green-and-white aesthetic and a smooth browsing-to-checkout flow."
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/votechain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking."
+            title: "Kantra Camera Booking System",
+            category: "Full Stack / Web",
+            technologies: "React, Node.js, PostgreSQL, FullCalendar API",
+            image: "/images/project2.png",
+            description: "Kantra is a camera rental booking management system that helps admins track rentals by day and time, monitor equipment status, and process rental orders quickly. Its intuitive calendar view is organized by camera model, making it easy to check availability, search bookings/customers, and manage the full rental lifecycle (pickup–return). The system streamlines operations, reduces scheduling conflicts, and minimizes errors when managing multiple devices."
         },
         {
             id: 3,
-            title: "EIE - Earthquake Impact Estimator",
-            category: "IoT / Hardware",
-            technologies: "Arduino, C++, IoT Sensors, Python, ML, React",
-            image: "/images/eie.png",
-            description: "A practical circuit-based IoT system utilizing Arduino to predict earthquakes before they strike. Integrates hardware sensors for real-time seismic detection and impact estimation."
+            title: "AI Healthcare Assistant",
+            category: "Mobile / AI",
+            technologies: "React Native, AI, Health APIs",
+            image: "/images/project6.png",
+            description: "An AI-powered healthcare assistant app that helps users track their health, manage medications, and receive personalized recommendations in real time. Features include a centralized dashboard for monitoring vital metrics (heart rate, sleep patterns, daily wellness), smart medication reminder system, seamless appointment scheduling, and an integrated AI chatbot that offers instant health guidance by analyzing symptoms and suggesting next steps."
         },
         {
             id: 4,
-            title: "GameKroy",
-            category: "Full Stack",
-            technologies: "React, Node.js, MongoDB, Express, Stripe, TailwindCSS",
-            image: "/images/gamekroy.png",
-            description: "A full-featured e-commerce platform for gaming products. Includes user authentication, product catalog, shopping cart, secure payments, order tracking, and admin dashboard."
+            title: "VocabAI",
+            category: "AI / EdTech",
+            technologies: "React 19, TypeScript, Vite, Supabase, Google Gemini API",
+            image: "/images/project4.png",
+            description: "VocabAI is a modern English vocabulary learning platform that combines AI with proven educational methods to optimize language acquisition. The application implements the SM-2 Spaced Repetition System (SRS) algorithm to automate review scheduling, helping learners commit vocabulary to long-term memory with maximum efficiency. By integrating the Google Gemini API, the system automatically generates interactive quizzes and personalized learning suggestions based on each user's proficiency level. The project provides a structured learning path aligned with CEFR standards (A1-B2), combined with Gamification mechanics (Streaks, XP, Badges) to boost self-motivation and maintain daily learning habits."
         },
         {
             id: 5,
-            title: "RedxChess",
+            title: "AI Chess",
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/redxchess.png",
+            image: "https://revolutionized.com/wp-content/uploads/2025/08/ShanesAI_chess_board_with_indigo_backdrop_modern_realistic_futu_8ab04f68-7bdd-48b8-9b18-7bc3fe01531e-3.png",
             description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
         },
         {
             id: 6,
-            title: "Floodhub",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/floodhub.png",
-            description: "A flood prediction model specifically designed for Ha Noi, Vietnam's river systems. Analyzes weather patterns, water levels, and historical data to provide accurate flood forecasts and alerts."
-        },
-        {
-            id: 7,
-            title: "Phoenix",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/phoenix.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience."
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes."
+            title: "BepViet",
+            category: "Full Stack / Social",
+            technologies: "React, TypeScript, Express.js, MongoDB, Google Generative AI",
+            image: "/images/project3.png",
+            description: "BepViet is a full-stack social cooking platform that enables users to share, discover, and save Vietnamese recipes within a vibrant community. Features include user authentication, recipe management, social feed with comments and likes, personalized recipe collections, and an AI-powered chatbot using Google Generative AI for recipe search and cooking suggestions. An admin dashboard provides content moderation, user management, and activity monitoring. The project implements JWT authentication, bcrypt password hashing, and Cloudinary integration for image management."
         }
     ],
     contact: {
         email: "vuanhtuanofc@gmail.com",
+        phone: "+84356204027",
         github: "https://github.com/tuanasish",
         linkedin: "",
         twitter: "https://x.com/tuancongchuaa",

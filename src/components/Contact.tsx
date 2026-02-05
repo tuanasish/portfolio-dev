@@ -68,6 +68,16 @@ const Contact = () => {
                 {config.contact.email}
               </a>
             </p>
+            {config.contact.phone && (
+              <>
+                <h4>Phone</h4>
+                <p>
+                  <a href={`tel:${config.contact.phone}`} data-cursor="disable">
+                    {config.contact.phone}
+                  </a>
+                </p>
+              </>
+            )}
             <h4>Location</h4>
             <p>
               <span>{config.social.location}</span>

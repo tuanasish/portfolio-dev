@@ -4,14 +4,14 @@ export default async function handler(req, res) {
     }
 
     const { messages } = req.body;
-    const apiKey = process.env.GROQ_API_KEY;
+    const apiKey = process.env.MEGALLM_API_KEY;
 
     if (!apiKey) {
         return res.status(500).json({ error: 'Server configuration error: Missing API Key' });
     }
 
     try {
-        const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        const response = await fetch('https://ai.megallm.io/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${apiKey}`,
@@ -19,19 +19,19 @@ export default async function handler(req, res) {
             },
             body: JSON.stringify({
                 messages,
-                model: 'llama-3.3-70b-versatile'
+                model: 'openai-gpt-oss-20b'
             })
         });
 
         const data = await response.json();
 
         if (!response.ok) {
-            throw new Error(data.error?.message || 'Failed to fetch from Groq');
+            throw new Error(data.error?.message || 'Failed to fetch from MegaLLM');
         }
 
         return res.status(200).json(data);
     } catch (error) {
-        console.error('Groq API Error:', error);
+        console.error('MegaLLM API Error:', error);
         return res.status(500).json({ error: 'Internal Server Error', details: error.message });
     }
 }

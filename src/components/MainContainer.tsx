@@ -16,7 +16,6 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
-  const [isMobile] = useState<boolean>(window.innerWidth <= 768);
 
   useEffect(() => {
     const resizeHandler = () => {
@@ -35,9 +34,10 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       <Cursor />
       <Navbar />
       <SocialIcons />
-      {isDesktopView && !isMobile && children}
-      <div className="container-main">
-        <Landing />
+      {/* 3D Model - Fixed on Desktop, inside Landing on Mobile */}
+      {isDesktopView && children}
+      <div className="main-content-flow">
+        <Landing>{!isDesktopView && children}</Landing>
         <About />
         <WhatIDo />
         <Career />
