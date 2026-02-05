@@ -39,20 +39,21 @@
   background-size: 100% 5px;
   background-repeat: no-repeat;
   background-position: 0 100%;
-  padding-bottom: 2px;
+  padding: 0 4px;
+  padding-bottom: 4px;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
-  color: inherit;
+  color: #fff;
   font-weight: 700;
-  /* Slant the right end "up" (bottom-right is higher than bottom-left) */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  /* Slant the right end "up" but lower the clip point to avoid text */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 92%, 0% 100%);
   transition: all 0.3s ease;
 }
 
 .about-me .highlight:hover {
   background: linear-gradient(90deg, #ff6bef, #c481ff);
   background-size: 100% 6px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 88%, 0% 100%);
 }
 
 .gradient-text {
