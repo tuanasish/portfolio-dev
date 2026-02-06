@@ -718,6 +718,33 @@ body:has(.play-page) {
   }
 }
 
+/* Quick Suggestions */
+.quick-suggestions {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(194, 164, 255, 0.08);
+}
+
+.quick-suggestion-btn {
+  padding: 6px 12px;
+  font-size: 11px;
+  color: var(--accentColor);
+  background: rgba(194, 164, 255, 0.08);
+  border: 1px solid rgba(194, 164, 255, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.quick-suggestion-btn:hover {
+  background: rgba(194, 164, 255, 0.2);
+  border-color: var(--accentColor);
+  transform: translateY(-1px);
+}
+
 .chat-input-area {
   display: flex;
   gap: 8px;

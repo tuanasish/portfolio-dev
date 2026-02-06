@@ -16,9 +16,23 @@ export const config = {
     },
     experiences: [
         {
+            position: "Full-time Freelance Developer",
+            company: "Remote Clients Worldwide",
+            period: "2026 - Present",
+            location: "Ha Noi, Vietnam",
+            description: "Working full-time as a freelance developer, building custom web and mobile applications for clients around the world. Delivering end-to-end solutions from design to deployment.",
+            responsibilities: [
+                "Building full-stack web applications for international clients",
+                "Developing mobile apps with Flutter and React Native",
+                "Integrating AI features into client projects",
+                "Managing projects from requirements to delivery"
+            ],
+            technologies: ["React", "Next.js", "Node.js", "Flutter", "AI Integration", "Supabase"]
+        },
+        {
             position: "Learning Something New",
             company: "Self-Development",
-            period: "2025 - Present",
+            period: "2025",
             location: "Ha Noi, Vietnam",
             description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
             responsibilities: [
@@ -72,18 +86,18 @@ export const config = {
             technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
         },
         {
-            position: "Graphic Designer",
-            company: "Freelance",
+            position: "IT Student",
+            company: "University of Transport and Communications",
             period: "2022",
-            location: "VietNam",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
+            location: "Ha Noi, Vietnam",
+            description: "Started studying Information Technology at UTC, learning programming fundamentals, algorithms, and building the foundation for my development career.",
             responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
+                "Learning programming fundamentals (C, C++, Java)",
+                "Studying data structures and algorithms",
+                "Building academic projects and assignments",
+                "Developing problem-solving skills"
             ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
+            technologies: ["C", "C++", "Java", "Algorithms", "Data Structures"]
         },
         {
             position: "Microsoft Office",
