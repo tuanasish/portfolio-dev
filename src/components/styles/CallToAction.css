@@ -17,6 +17,7 @@
 .cta-btn {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
   padding: 14px 32px;
   font-size: 15px;
   font-weight: 500;
@@ -24,6 +25,12 @@
   border-radius: 8px;
   transition: all 0.3s ease;
   letter-spacing: 0.3px;
+}
+
+.cta-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .cta-btn-play {
@@ -45,6 +52,7 @@
 }
 
 .cta-btn-hire:hover {
+  color: #000;
   box-shadow: 0 8px 30px rgba(194, 164, 255, 0.35);
   transform: translateY(-2px);
 }
