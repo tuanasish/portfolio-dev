@@ -17,7 +17,7 @@ export const config = {
     experiences: [
         {
             position: "Full-time Freelance Developer",
-            company: "Remote Clients Worldwide",
+            company: "Self-Employed",
             period: "2026 - Present",
             location: "Ha Noi, Vietnam",
             description: "Working full-time as a freelance developer, building custom web and mobile applications for clients around the world. Delivering end-to-end solutions from design to deployment.",
