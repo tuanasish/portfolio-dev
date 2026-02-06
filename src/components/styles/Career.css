@@ -265,9 +265,5 @@
   .career-section {
     padding-top: 90px;
     margin-top: 0px;
-
-    align-items: start;
-    place-items: inherit;
-    justify-content: left;
   }
 }

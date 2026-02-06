@@ -281,6 +281,45 @@ h2.landing-info-h2 {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  .landing-intro {
+    left: 0;
+    text-align: left;
+    display: block;
+    width: auto;
+  }
+
+  .landing-info {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    transform: none !important;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    bottom: 60px;
+  }
+
+  .landing-info h3 {
+    width: 100%;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .landing-info h2 {
+    margin-left: 0 !important;
+    margin-top: 5px !important;
+    justify-content: center;
+  }
+
+  h2.landing-info-h2 {
+    margin-left: 0 !important;
+    justify-content: center;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .landing-intro h2 {
     font-size: 16px;
