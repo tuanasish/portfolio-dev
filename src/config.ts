@@ -16,11 +16,25 @@ export const config = {
     },
     experiences: [
         {
+            position: "Software Engineer",
+            company: "Viettel - SPM Department",
+            period: "04/2026 - Present",
+            location: "Ha Noi, Vietnam",
+            description: "Working as a Software Engineer in Viettel's SPM Department, contributing to software development, system maintenance, and internal product improvements.",
+            responsibilities: [
+                "Developing and maintaining software systems",
+                "Supporting internal product features and improvements",
+                "Collaborating with engineering teams on technical solutions",
+                "Ensuring reliable and maintainable software delivery"
+            ],
+            technologies: ["Software Engineering", "Web Development", "Backend", "System Maintenance"]
+        },
+        {
             position: "Full-time Freelance Developer",
             company: "Self-Employed",
-            period: "2026 - Present",
+            period: "01/2026 - 03/2026",
             location: "Ha Noi, Vietnam",
-            description: "Working full-time as a freelance developer, building custom web and mobile applications for clients around the world. Delivering end-to-end solutions from design to deployment.",
+            description: "Worked full-time as a freelance developer, building custom web and mobile applications for clients around the world. Delivered end-to-end solutions from design to deployment.",
             responsibilities: [
                 "Building full-stack web applications for international clients",
                 "Developing mobile apps with Flutter and React Native",
@@ -125,14 +139,6 @@ export const config = {
         },
         {
             id: 2,
-            title: "Kantra Camera Booking System",
-            category: "Full Stack / Web",
-            technologies: "React, Node.js, PostgreSQL, FullCalendar API",
-            image: "/images/project2.png",
-            description: "Kantra is a camera rental booking management system that helps admins track rentals by day and time, monitor equipment status, and process rental orders quickly. Its intuitive calendar view is organized by camera model, making it easy to check availability, search bookings/customers, and manage the full rental lifecycle (pickup–return). The system streamlines operations, reduces scheduling conflicts, and minimizes errors when managing multiple devices."
-        },
-        {
-            id: 3,
             title: "AI Healthcare Assistant",
             category: "Mobile / AI",
             technologies: "React Native, AI, Health APIs",
@@ -140,7 +146,7 @@ export const config = {
             description: "An AI-powered healthcare assistant app that helps users track their health, manage medications, and receive personalized recommendations in real time. Features include a centralized dashboard for monitoring vital metrics (heart rate, sleep patterns, daily wellness), smart medication reminder system, seamless appointment scheduling, and an integrated AI chatbot that offers instant health guidance by analyzing symptoms and suggesting next steps."
         },
         {
-            id: 4,
+            id: 3,
             title: "VocabAI",
             category: "AI / EdTech",
             technologies: "React 19, TypeScript, Vite, Supabase, Google Gemini API",
@@ -148,7 +154,7 @@ export const config = {
             description: "VocabAI is a modern English vocabulary learning platform that combines AI with proven educational methods to optimize language acquisition. The application implements the SM-2 Spaced Repetition System (SRS) algorithm to automate review scheduling, helping learners commit vocabulary to long-term memory with maximum efficiency. By integrating the Google Gemini API, the system automatically generates interactive quizzes and personalized learning suggestions based on each user's proficiency level. The project provides a structured learning path aligned with CEFR standards (A1-B2), combined with Gamification mechanics (Streaks, XP, Badges) to boost self-motivation and maintain daily learning habits."
         },
         {
-            id: 5,
+            id: 4,
             title: "AI Chess",
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
@@ -156,7 +162,7 @@ export const config = {
             description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation."
         },
         {
-            id: 6,
+            id: 5,
             title: "BepViet",
             category: "Full Stack / Social",
             technologies: "React, TypeScript, Express.js, MongoDB, Google Generative AI",

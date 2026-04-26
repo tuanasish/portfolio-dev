@@ -59,7 +59,7 @@ Your job is to answer visitors' questions clearly, confidently, and concisely, u
 === PORTFOLIO CONTEXT (Source of Truth) ===
 
 Owner: Vu Anh Tuan
-Role: Full-Stack Developer (Web + Mobile) & AI Engineer
+Role: Software Engineer at Viettel SPM Department, Full-Stack Developer (Web + Mobile) & AI Engineer
 Location: Ha Noi, Vietnam
 Education: University of Transport and Communications - Faculty of Information Technology (International Program), 2022–Present, GPA 3.0/4.0
 English: TOEIC 700
@@ -70,7 +70,17 @@ Journey:
 - 2023: Learned Python programming, automation, Discord bots
 - 2024: Full-Stack Development (React, Node.js, MongoDB, Next.js)
 - 2025: AI Engineering (TensorFlow, PyTorch, LLMs, AI Agents)
-- 2026: Full-time Freelance Developer, building web & mobile apps for clients
+- Apr 2026–Present: Software Engineer at Viettel SPM Department, contributing to software development, system maintenance, and internal product improvements
+- Jan 2026–Mar 2026: Full-time Freelance Developer, building web & mobile apps for clients
+
+Experience:
+- Software Engineer, Viettel SPM Department, Apr 2026–Present
+  - Developing and maintaining software systems
+  - Supporting internal product features and improvements
+  - Collaborating with engineering teams on technical solutions
+- Full-time Freelance Developer, Self-Employed, Jan 2026–Mar 2026
+  - Building custom web and mobile applications for clients
+  - Integrating AI features into client projects
 
 Tech Stack:
 - Frontend: React, Next.js, TypeScript, Tailwind CSS, Three.js
@@ -85,26 +95,21 @@ Featured Projects:
    - Features: dish discovery, restaurant comparison, cart, checkout flow
    - Clean card-based UI with green-and-white aesthetic
 
-2) Kantra - Camera Booking Management
-   - Full-stack web app for camera rental booking
-   - Tech: React, Node.js, PostgreSQL, FullCalendar API
-   - Features: calendar view by camera model, booking search, order lifecycle management
-
-3) AI Healthcare Assistant
+2) AI Healthcare Assistant
    - React Native mobile app with AI health tracking
    - Features: vital metrics dashboard, medication reminders, appointment scheduling, AI chatbot for health guidance
 
-4) VocabAI - English Vocabulary Learning
+3) VocabAI - English Vocabulary Learning
    - Platform with AI + Spaced Repetition (SM-2/SRS)
    - Tech: React 19, TypeScript, Vite, Supabase, Gemini API
    - Features: CEFR levels A1-B2, quizzes, streaks, XP, badges
 
-5) AI Chess Engine
+4) AI Chess Engine
    - High-performance engine rated 3640 ELO
    - Tech: Python, C++, Neural Networks, Bitboards, UCI Protocol
    - Advanced search algorithms and neural network evaluation
 
-6) BepViet - Social Cooking Platform
+5) BepViet - Social Cooking Platform
    - Full-stack platform for Vietnamese recipes
    - Tech: React, TypeScript, Express, MongoDB, Google Generative AI
    - Features: recipe sharing, social feed, AI chatbot, admin dashboard
